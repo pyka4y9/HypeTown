@@ -24,3 +24,14 @@ window.onclick = function(event) {
     hero.style.display = "block";
   }
 }
+
+function myFunction() {
+
+  var copyText = document.getElementById("myInput");
+
+  copyText.select();
+
+  document.execCommand("copy");
+
+  alert("Текст Скопирован");
+}
