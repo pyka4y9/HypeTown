@@ -1,29 +1,19 @@
-var modal = document.getElementById("myModal");
 
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("demo01");
 
 var hero = document.getElementById("hero");
 
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close-animatedModal")[0];
 
 btn.onclick = function() {
-  modal.style.display = "block";
-  hero.style.display = "none";
+  hero.style.opacity = "0";
 }
 
 
 span.onclick = function() {
-  modal.style.display = "none";
+  hero.style.opacity = "1";
 }
 
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    hero.style.display = "block";
-  }
-}
 
 function myFunction() {
 
