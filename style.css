@@ -8,11 +8,12 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
-
 }
 
 body {
   max-height: 700px;
+  zoom: 90%;
+
 }
 
 .header__section {
@@ -167,8 +168,7 @@ body {
 }
 
 .crossfade > figure {
-  animation: imageAnimation 30s linear infinite 0s;
-  backface-visibility: hidden;
+    animation: imageAnimation 15s cubic-bezier(0, 0, 0.68, 1.4) infinite 0s;  backface-visibility: hidden;
   background-size: cover;
   background-position: center center;
   color: transparent;
@@ -183,12 +183,12 @@ body {
   margin-top: 92px;
 }
 
-.crossfade > figure:nth-child(1) {    
+.crossfade > figure:nth-child(1) {  
   height: 100%;
   background-image: url('./2020-12-03_13_35_27.png');
 }
 .crossfade > figure:nth-child(2) {
-  animation-delay: 9s;
+  animation-delay: 6s;
   height: 100%;
   background-image: url('./2020-12-03_14_17_43\ \(1\).png');
 }
@@ -198,21 +198,19 @@ body {
     animation-timing-function: ease-in;
     opacity: 0;
   }
-  8% {
+
+  6% {
+    opacity: 1;
+  }
+
+  60% {
     animation-timing-function: ease-out;
     opacity: 1;
   }
 
-}
-
-@keyframes HeroAnimation {
-  0% {
+  90% {
     animation-timing-function: ease-in;
     opacity: 0;
-  }
-  8% {
-    animation-timing-function: ease-out;
-    opacity: 1;
   }
 
 }
