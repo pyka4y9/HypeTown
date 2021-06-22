@@ -3,17 +3,17 @@
   width: 1100px;
 }
 
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow: hidden;
 }
 
 body {
   max-height: 700px;
   zoom: 90%;
-
+  overflow: hidden;
 }
 
 .header__section {
@@ -181,6 +181,7 @@ body {
   width: 100%;
   z-index: 0;
   margin-top: 92px;
+  overflow: hidden;
 }
 
 .crossfade > figure:nth-child(1) {  

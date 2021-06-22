@@ -3,6 +3,7 @@ var btn = document.getElementById("demo01");
 
 var hero = document.getElementById("hero");
 
+
 var span = document.getElementsByClassName("close-animatedModal")[0];
 
 btn.onclick = function() {
