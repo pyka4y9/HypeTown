@@ -15,7 +15,7 @@ btn.onclick = function() {
   btn.style.background = "#513A3D";
   modal.style.opacity = "1";
   modal.style.bottom = "0";
-  hero.style.background= "rgba(0,0,0,0.6)";
+  hero.style.background= "rgba(0,0,0,0.7)";
 }
 
 
