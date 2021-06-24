@@ -18,14 +18,6 @@ btn.onclick = function() {
   hero.style.background= "rgba(0,0,0,0.7)";
 }
 
-btn.onmouseenter = function () {
-  btn.style.background = "#513A3D";
-}
-
-btn.onmouseleave = function () {
-  btn.style.background = "auto";
-}
-
 
 window.onclick = function(event) {
   if (event.target == modal) {

@@ -42,9 +42,12 @@ body {
   padding: 10px 70px;
   border: none;
   transition: 0.2s;
-  cursor: pointer;
 }
 
+.header__button:hover {
+  background: #513A3D;
+  cursor: pointer;
+}
 
 .hero {
   position: absolute; 
