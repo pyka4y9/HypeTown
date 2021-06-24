@@ -61,6 +61,7 @@ body {
 
 
 .hero__main {
+  position: relative;
   background: #FFFFFF;
   border-radius: 20px;
   display: flex;
@@ -68,6 +69,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.7s;
+  top: 0;
 }
 
 .hero__title {
@@ -98,9 +101,10 @@ body {
   z-index: 111; 
   width: 100%; 
   height: 100%;
-  opacity: 0; 
+  opacity: 0;
+  bottom: 1000px; 
+  margin: auto;
   transition: 0.4s;
-  background-color: rgba(0,0,0,0.6);
 }
 
 .modal__items {
@@ -111,7 +115,7 @@ body {
   padding: 30px 90px;
   max-width: 90%;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 170px;
 }
 
 .modal__item {
@@ -172,7 +176,7 @@ body {
 }
 
 .crossfade > figure {
-    animation: imageAnimation 15s cubic-bezier(0, 0, 0.68, 1.4) infinite 0s;  backface-visibility: hidden;
+  animation: imageAnimation 15s cubic-bezier(0, 0, 0.68, 1.4) infinite 0s;  backface-visibility: hidden;
   background-size: cover;
   background-position: center center;
   color: transparent;
